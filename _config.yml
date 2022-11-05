@@ -51,6 +51,8 @@ collections:
     output: true
   projects:
     output: true
+  notes:
+    output: true
   blog:
     sort_by: date
     output: true
