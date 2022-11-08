@@ -8,9 +8,9 @@
 	"object": {
 		"id": "https://jakekara.com/activitypub/hello-world",
 		"type": "Note",
-		"published": "2022-11-07T17:17:11Z",
+		"published": "2022-11-07T2:04:11Z",
 		"attributedTo": "https://jakekara.com/actor",
-		"inReplyTo": "https://twit.social/web/@jakek/109297170478015746",
+		"inReplyTo": "https://twit.social/@jakek/109297170478015746",
 		"content": "<p>Tooting this from a static site built with jekyll. Yay!</p>",
 		"to": "https://www.w3.org/ns/activitystreams#Public"
 	}
