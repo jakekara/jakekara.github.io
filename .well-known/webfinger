@@ -1,0 +1,10 @@
+{
+	"subject": "acct:jakekara@jakekara.com",
+	"links": [
+		{
+			"rel": "self",
+			"type": "application/activity+json",
+			"href": "https://jakekara.com/actor"
+		}
+	]
+}

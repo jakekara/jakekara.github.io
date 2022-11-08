@@ -1,0 +1,17 @@
+{
+	"@context": "https://www.w3.org/ns/activitystreams",
+
+	"id": "https://jakekara.com/activitypub/create-hello-world",
+	"type": "Create",
+	"actor": "https://jakekara.com/actor",
+
+	"object": {
+		"id": "https://jakekara.com/hello-world",
+		"type": "Note",
+		"published": "2018-06-23T17:17:11Z",
+		"attributedTo": "https://jakekara.com/actor",
+		"inReplyTo": "https://twit.social/web/@jakek/109297170478015746",
+		"content": "<p>Tooting this from a static site built with jekyll. Yay!</p>",
+		"to": "https://www.w3.org/ns/activitystreams#Public"
+	}
+}
