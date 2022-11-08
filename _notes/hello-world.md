@@ -1,1 +1,4 @@
-This is my first post using syncthing and an bash script to auto-publish notes I write on my phone.
+--
+layout: post
+--
+-This is my first markor note written on my phone!
