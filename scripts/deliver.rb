@@ -4,8 +4,16 @@ require 'http'
 require 'openssl'
 
 document      = File.read('activitypub/create-hello-world')
-# It turns out there is a digest field the tutorial didn't go over. This seems to be
-# the right way to compute it because other attempts were failing. 
+
+# This is part is what's missing from the joinmastodon.org block post:
+# It turns out there is a digest field the tutorial didn't go over. 
+# This wasn't really clear to me from the blog post or any of the docs
+# until I read the mastodon source code that each line in the 
+# signed_string variable corresponds to one of the space-delimeted
+# pseudo-headers specifieid in the "headers=" value of the header
+# variable below. So since the pseudo headers list (request-target), 
+# digest, host and date, there needs to be a line for each one in the
+# signed_string variable before it get signed.
 sha256 = OpenSSL::Digest::SHA256.new
 digest = Base64.strict_encode64(sha256.digest(document))
 
