@@ -8,6 +8,7 @@
 	"type": "Person",
 	"preferredUsername": "jakekara",
 	"inbox": "https://jakekara.com/inbox",
+	"outbox": "https://jakekara.com/activitypub/outbox.json",
 
 	"publicKey": {
 		"id": "https://jakekara.com/actor#main-key",

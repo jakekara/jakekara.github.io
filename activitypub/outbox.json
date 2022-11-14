@@ -1,0 +1,18 @@
+---
+layout: null
+---
+
+{
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "summary": "Jake's outbox",
+    "type": "OrderedCollection",
+    "totalItems": 2,
+    "orderedItems": [
+        {% for post in site.posts %}
+        {
+            "type": "Note",
+            "title": "{{ post.title }}"
+        }{% if forloop.last %}{% else %},{% endif %}
+        {% endfor %}
+    ]
+}
