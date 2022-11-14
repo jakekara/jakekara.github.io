@@ -19,7 +19,6 @@ layout: null
             "to": [
               "https://www.w3.org/ns/activitystreams#Public"
             ],
-            "cc": [],
             "object": {
               "id": "{{ post.url | prepend: site.baseurl | prepend: site.url }}",
               "type": "Note",
@@ -34,7 +33,7 @@ layout: null
               "sensitive": false,
               "atomUri": "{{ post.url | prepend: site.baseurl | prepend: site.url }}",
               "inReplyToAtomUri": null,
-              "content": "HELLO",
+              "content": {{post.content | jsonify }},
               "contentMap": {
                 "en": {{post.content | jsonify }}
               },
