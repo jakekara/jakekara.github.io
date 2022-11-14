@@ -2,6 +2,8 @@
 layout: null
 ---
 
+
+
 {
     "@context": "https://www.w3.org/ns/activitystreams",
     "summary": "Jake's outbox",
@@ -10,9 +12,46 @@ layout: null
     "orderedItems": [
         {% for post in site.posts %}
         {
-            "type": "Note",
-            "title": "{{ post.title }}"
-        }{% if forloop.last %}{% else %},{% endif %}
+            "id": "{{ post.url | prepend: site.baseurl | prepend: site.url }}/activity",
+            "type": "Create",
+            "actor": "https://jakekara.com/actor",
+            "published": "2022-11-14T00:03:42Z",
+            "to": [
+              "https://www.w3.org/ns/activitystreams#Public"
+            ],
+            "cc": [],
+            "object": {
+              "id": "{{ post.url | prepend: site.baseurl | prepend: site.url }}",
+              "type": "Note",
+              "summary": null,
+              "inReplyTo": null,
+              "published": "2022-11-14T00:03:42Z",
+              "url": "{{ post.url | prepend: site.baseurl | prepend: site.url }}",
+              "attributedTo": "https://jakekara.com/actor",
+              "to": [
+                "https://www.w3.org/ns/activitystreams#Public"
+              ],
+              "sensitive": false,
+              "atomUri": "{{ post.url | prepend: site.baseurl | prepend: site.url }}",
+              "inReplyToAtomUri": null,
+              "content": "HELLO",
+              "contentMap": {
+                "en": {{post.content | jsonify }}
+              },
+              "attachment": [],
+              "tag": [],
+              "replies": {
+                "id": "{{ post.url | prepend: site.baseurl | prepend: site.url }}/replies",
+                "type": "Collection",
+                "first": {
+                  "type": "CollectionPage",
+                  "next": "{{ post.url | prepend: site.baseurl | prepend: site.url }}/replies?only_other_accounts=true&page=true",
+                  "partOf": "{{ post.url | prepend: site.baseurl | prepend: site.url }}/replies",
+                  "items": []
+                }
+              }
+            }
+          }{% if forloop.last %}{% else %},{% endif %}
         {% endfor %}
     ]
 }
