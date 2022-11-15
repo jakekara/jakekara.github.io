@@ -8,7 +8,7 @@ layout: null
     "@context": "https://www.w3.org/ns/activitystreams",
     "summary": "Jake's outbox",
     "type": "OrderedCollection",
-    "totalItems": 2,
+    "totalItems": {{ site.posts.size }},
     "orderedItems": [
         {% for post in site.posts %}
         {
