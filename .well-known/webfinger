@@ -4,7 +4,7 @@
 		{
 			"rel": "self",
 			"type": "application/activity+json",
-			"href": "https://jakekara.com/actors/jakekara.json"
+			"href": "https://jakekara.com/activitypub/actors/jakekara.json"
 		}
 	]
 }
