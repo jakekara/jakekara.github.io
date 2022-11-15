@@ -1,8 +1,10 @@
-
 {
     "@context": "https://www.w3.org/ns/activitystreams",
-    "summary": "Jake's outbox",
-    "type": "OrderedCollection",
+    "id": "https://twit.social/users/jakek/followers",
+    "type": "OrderedCollectionPage",
     "totalItems": 1,
-    "orderedItems": [ "@jakek@twit.social" ]
-}
+    "partOf": "https://twit.social/users/jakek/followers",
+    "orderedItems": [
+        "https://twit.social/users/jakekara"
+    ]
+  }
