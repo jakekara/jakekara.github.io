@@ -23,7 +23,7 @@
     "{{ ingredient }}"{% if forloop.last %}{% else %},{% endif %}{% endfor %}],
     "recipeInstructions": [{% for step in page.directions %}{
         "@type": "HowToStep",
-        "text": {{step}},
+        "text": {{step | jsonify}},
     }{% if forloop.last %}{% else %},{% endif %}{% endfor %}],
     "ratingValue": "{{page.rating}}",
     }
