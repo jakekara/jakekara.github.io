@@ -53,6 +53,9 @@ collections:
     output: true
   notes:
     output: true
+  food:
+    output: true
+    permalink: /:collection/:title
   blog:
     sort_by: date
     output: true
