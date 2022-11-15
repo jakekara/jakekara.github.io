@@ -83,4 +83,8 @@
   <meta name="theme-color" content="#7ee9ae">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="#7ee9ae">
+
+  {% if page.type == "recipe" %}
+  {% include recipedata.html %}
+  {% endif %}
 </head>

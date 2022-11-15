@@ -1,0 +1,30 @@
+---
+layout: "base"
+---
+
+<h1>{{page.title}}</h1>
+
+{{ page.content }}
+
+<h2>Ingredients</h2>
+
+<ul>
+{% for ingredient in page.ingredients %}
+<li>{{ingredient}}</li>
+{% endfor %}
+</ul>
+
+<h2>Steps</h2>
+
+<ol>
+{% for step in page.directions %}
+<li>{{step}}</li>
+{% endfor %}
+</ol>
+
+<h2>Notes</h2>
+<ol>
+    {% for note in page.notes %}
+    <li>{{ note }}</li>
+    {% endfor %}
+</ol>

@@ -1,0 +1,31 @@
+{% if page.type == "recipe" %}
+<!-- recipe data -->
+<script type="application/ld+json">
+{
+    "@context": "https://schema.org/",
+    "@type": "Recipe",
+    "name": {{page.title | jsonify}},
+    "image": [],
+    "author": {
+    "@type": "Person",
+    "name": "Jake Kara"
+    },
+    "datePublished": "{{page.date}}",
+    "description": "This coffee cake is awesome and perfect for parties.",
+    "prepTime": "{{page.prepTime}}",
+    "cookTime": "{{page.cookTime}}",
+    "totalTime": "{{page.totalTime}}",
+    "keywords": {{page.title | jsonify}},
+    "recipeYield": {{page.recipeYield | jsonify}},
+    "recipeCategory": "{{page.recipeCategory}}",
+    "recipeCuisine": "{{page.recipeCuisine}}",
+    "recipeIngredient": [{% for ingredient in page.ingredients %}
+    "{{ ingredient }}"{% if forloop.last %}{% else %},{% endif %}{% endfor %}],
+    "recipeInstructions": [{% for step in page.directions %}{
+        "@type": "HowToStep",
+        "text": {{step}},
+    }{% if forloop.last %}{% else %},{% endif %}{% endfor %}],
+    "ratingValue": "{{page.rating}}",
+    }
+}
+</script>  {% endif %}
