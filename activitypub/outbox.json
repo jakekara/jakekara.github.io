@@ -14,7 +14,7 @@ layout: null
         {
             "id": "{{ post.url | prepend: site.baseurl | prepend: site.url }}/activity",
             "type": "Create",
-            "actor": "https://jakekara.com/actor",
+            "actor": "https://jakekara.com/actors/jakekara.json",
             "published": "2022-11-14T00:03:42Z",
             "to": [
               "https://www.w3.org/ns/activitystreams#Public"
@@ -26,7 +26,7 @@ layout: null
               "inReplyTo": null,
               "published": "2022-11-14T00:03:42Z",
               "url": "{{ post.url | prepend: site.baseurl | prepend: site.url }}",
-              "attributedTo": "https://jakekara.com/actor",
+              "attributedTo": "https://jakekara.com/activitypub/actors/jakekara.json",
               "to": [
                 "https://www.w3.org/ns/activitystreams#Public"
               ],
