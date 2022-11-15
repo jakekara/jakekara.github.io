@@ -3,7 +3,9 @@
 require 'http'
 require 'openssl'
 
-document      = File.read('activitypub/create-hello-world')
+# document      = File.read('activitypub/create-hello-world')
+document      = File.read('activitypub/create-a-post.json')
+
 
 # This is part is what's missing from the joinmastodon.org block post:
 # It turns out there is a digest field the tutorial didn't go over. 
@@ -15,19 +17,19 @@ document      = File.read('activitypub/create-hello-world')
 # digest, host and date, there needs to be a line for each one in the
 # signed_string variable before it get signed.
 sha256 = OpenSSL::Digest::SHA256.new
-digest = Base64.strict_encode64(sha256.digest(document))
+digest = "SHA-256=" + Base64.strict_encode64(sha256.digest(document))
 
 
 date          = Time.now.utc.httpdate
 keypair       = OpenSSL::PKey::RSA.new(File.read('private.pem'))
-signed_string = "(request-target): post /inbox\ndigest: SHA-256=#{digest}\nhost: twit.social\ndate: #{date}"
+signed_string = "(request-target): post /inbox\nhost: twit.social\ndate: #{date}\ndigest: #{digest}"
 signature     = Base64.strict_encode64(keypair.sign(OpenSSL::Digest::SHA256.new, signed_string))
-header        = 'keyId="https://jakekara.com/actor#main-key",headers="(request-target) digest host date",signature="' + signature + '"'
+header        = 'keyId="https://jakekara.com/actors/jakekara.json#main-key",headers="(request-target) host date digest",signature="' + signature + '"'
 
 print(document + "\n")
 print(signed_string + "\n")
 
-response = HTTP.headers({ 'Host': 'twit.social', 'Date': date, 'Signature': header, 'Digest': "SHA-256="+digest })
+response = HTTP.headers({ 'Host': 'twit.social', 'Date': date, 'Signature': header, 'Digest': digest })
     .post('https://twit.social/inbox', body: document)
 
 puts response

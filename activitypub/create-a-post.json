@@ -1,0 +1,16 @@
+{
+	"@context": "https://www.w3.org/ns/activitystreams",
+
+	"id": "https://jakekara.com/activitypub/notes/create-a-post",
+	"type": "Create",
+	"actor": "https://jakekara.com/actors/jakekara.json",
+
+	"object": {
+		"id": "https://jakekara.com/activitypub/hello-world",
+		"type": "Note",
+		"published": "2022-14-07T2:04:11Z",
+		"attributedTo": "https://jakekara.com/actors/jakekara.json",
+		"content": "<p>This is a post created from my Jekyll site.</p>",
+		"to": "https://www.w3.org/ns/activitystreams#Public"
+	}
+}

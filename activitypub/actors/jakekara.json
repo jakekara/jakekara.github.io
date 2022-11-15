@@ -1,0 +1,18 @@
+{
+	"@context": [
+		"https://www.w3.org/ns/activitystreams",
+		"https://w3id.org/security/v1"
+	],
+
+	"id": "https://jakekara.com/activitypub/actors/jakekara.json",
+	"type": "Person",
+	"preferredUsername": "jakekara",
+	"inbox": "https://jakekara.com/activitypub/inbox",
+	"outbox": "https://jakekara.com/activitypub/outbox.json",
+
+	"publicKey": {
+		"id": "https://jakekara.com/actors/jakekara.json#main-key",
+		"owner": "https://jakekara.com/actors/jakekara.json",
+		"publicKeyPem": "-----BEGIN PUBLIC KEY-----\nMIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAgt9FEavGRvIH2R3HVVIO\nyh8shIuJ6VwGNk+9SNOloJAFOunqFdltDbgGotiE4PGKVbbtApLWjEh28b6Ojmzw\nqvf0FEDywOy2OM+BLS+IyjzE9KX8tSwO3V/wJJYuAS1cL6YRrvFH+3XNxvlTy7Rk\n8s16KK2oQYiCosfXAVGcQZlzeBQ3j9seUMtLxK/tnYQl/F139r8FgFwYsoi3sKq9\nqFx4VmEd2/PwLrvuiB6RNs8suMYGjYKEi0rT0ESHFusNvBW/T3fQuOYAF8ohBFyd\nN/EWB5UmJMQu9TMQrSY03eyhggWZnK95uzrYJDEtXMc29rJEux2v0C0hKkk9DAH4\nDQIDAQAB\n-----END PUBLIC KEY-----"
+	}
+}

@@ -32,7 +32,6 @@ layout: null
               ],
               "sensitive": false,
               "atomUri": "{{ post.url | prepend: site.baseurl | prepend: site.url }}",
-              "inReplyToAtomUri": null,
               "content": {{post.content | jsonify }},
               "contentMap": {
                 "en": {{post.content | jsonify }}
