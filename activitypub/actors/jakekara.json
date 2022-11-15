@@ -7,6 +7,7 @@
 	"id": "https://jakekara.com/activitypub/actors/jakekara.json",
 	"type": "Person",
 	"preferredUsername": "jakekara",
+	"summary": "A static site trying to federate.",
 	"inbox": "https://jakekara.com/activitypub/inbox",
 	"outbox": "https://jakekara.com/activitypub/outbox.json",
 
