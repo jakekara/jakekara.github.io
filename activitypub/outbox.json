@@ -12,7 +12,7 @@ layout: null
     "orderedItems": [
         {% for post in site.posts %}
         {
-            "id": "{{ post.url | prepend: site.baseurl | prepend: site.url }}/activity",
+            "id": "https://jakekara.com/activitypub/activities/#{{ post.url }}",
             "type": "Create",
             "actor": "https://jakekara.com/activitypub/actors/jakekara.json",
             "published": "2022-11-14T00:03:42Z",
