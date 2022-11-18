@@ -12,7 +12,7 @@
 	"discoverable": true,
 	"url": "https://jakekara.com/whoami",
 
-	"inbox": "https://jakekara.com/activitypub/inbox",
+	"inbox": "https://b90ech2g3a.execute-api.us-east-1.amazonaws.com/default/inbox",
 	"outbox": "https://jakekara.com/activitypub/outbox.json",
 	
 	"publicKey": {
