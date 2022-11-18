@@ -1,0 +1,9 @@
+{
+    "@context": "https://www.w3.org/ns/activitystreams",
+    "id": "https://jakekara.com/activitypub/following.json",
+    "type": "OrderedCollectionPage",
+    "totalItems": 1,
+    "orderedItems": [
+        "https://twit.social/users/jakek"
+    ]
+  }
