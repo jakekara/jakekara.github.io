@@ -1,0 +1,13 @@
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "id": "https://jakekara.com/activitypub/activities/undo-follow-leo.json",
+  "type": "Undo",
+  "actor": "https://jakekara.com/activitypub/actors/jakekara.json",
+  "object": {
+    "id": "https://jakekara.com/activitypub/activities/send-follow-leo.json",
+    "type": "Follow",
+    "actor": "https://jakekara.com/activitypub/actors/jakekara.json",
+    "published": "2022-11-19T19:42:12Z",
+    "object": "https://twit.social/users/leo"
+  }
+}

@@ -1,0 +1,7 @@
+{
+  "@context": "https://www.w3.org/ns/activitystreams",
+  "id": "https://jakekara.com/activitypub/activities/send-follow-leo.json",
+  "type": "Follow",
+  "object": "https://twit.social/users/leo",
+  "actor": "https://jakekara.com/activitypub/actors/jakekara.json"
+}
