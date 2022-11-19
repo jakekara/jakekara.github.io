@@ -10,6 +10,46 @@ layout: null
     "type": "OrderedCollection",
     "totalItems": {{ site.posts.size }},
     "orderedItems": [
+      {
+        "@context": [
+          "https://www.w3.org/ns/activitystreams",
+          "https://w3id.org/security/v1"
+        ],
+        "id": "https://jakekara.com/activitypub/activities/hello-toot/activity",
+        "type": "Create",
+        "actor": "https://jakekara.com/activitypub/actors/jakekara.json",
+        "published": "2022-11-19T19:06:31Z",
+        "to": ["https://www.w3.org/ns/activitystreams#Public"],
+        "cc": [
+          "https://jakekara.com/activitypub/followers.json"
+        ],
+        "object": {
+          "id": "https://jakekara.com/activitypub/activities/hello-toot",
+          "type": "Note",
+          "inReplyTo": null,
+          "published": "2022-11-19T19:06:31Z",
+          "url": "https://jakekara.com/activitypub/activities/hello-toot",
+          "attributedTo": "https://jakekara.com/activitypub/actors/jakekara.json",
+          "to": ["https://www.w3.org/ns/activitystreams#Public"],
+          "cc": [
+            "https://jakekara.com/activitypub/followers.json"
+          ],
+          "sensitive": false,
+          "atomUri": "https://jakekara.com/activitypub/activities/hello-toot",
+          "inReplyToAtomUri": null,
+          "conversation": "tag:twit.social,2022-11-19:objectId=noconversation:objectType=Conversation",
+          "content": "<p>Hello toot! Fist public toot from a static website!</p>",
+          "contentMap": {
+            "en": "<p>Hello toot! Fist public toot from a static website!</p>"
+          },
+          "attachment": [],
+          "tag": [],
+          "replies": {
+            "id": "https://jakekara.com/activitypub/activities/hello-toot/replies",
+            "type": "Collection"
+          }
+        }
+      },
         {% for post in site.posts %}
         {
             "id": "https://jakekara.com/activitypub/activities/#{{ post.url }}",
