@@ -4,7 +4,7 @@ title: whoami
 permalink: /whoami/
 ---
 
-I'm Jake kara. I'm a softare engineer at The Washington Post.
+I'm Jake kara. I'm a software engineer at The Washington Post.
 
 Before that I worked at Yale University Library, in both the [Digital Humanities Lab](https://dhlab.yale.edu) and the [Fortunoff Video Archive for Holocaust Testimony](https://fortunoff.library.yale.edu/).
 
