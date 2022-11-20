@@ -11,7 +11,7 @@
 	"manuallyApprovesFollowers": false,
 	"discoverable": true,
 	"url": "https://jakekara.com/whoami",
-
+	"icon": "https://jakekara/favicon-192.png",
 	"inbox": "https://b90ech2g3a.execute-api.us-east-1.amazonaws.com/default/inbox",
 	"outbox": "https://jakekara.com/activitypub/outbox.json",
 	
