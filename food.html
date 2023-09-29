@@ -1,0 +1,27 @@
+---
+layout: base
+title: food
+description: I like to cook
+---
+{% include base.html %}
+<h1>Food</h1>
+<p>I like to eat it. I like to make it.</p>
+<ul class="post-list">
+  {% assign sorted = site.food | reverse %}
+  {% for post in sorted %}
+  <a aria-label="{{ post.title }} " href="{{ post.url | relative_url }}">
+  <li class="col-xs-12 story-preview">
+    
+      <article>
+        <header>
+          <p class="col-xs-7 col-sm-2 post-meta">
+            <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %-d, %Y" }}</time>
+          </p>
+          <p class="post-link meta" href="{{ post.url | relative_url }}">
+              {{ post.emoji | default: "📝" }} {{ post.excerpt | strip_html}}</p>
+        </header>
+      </article>
+  </li>
+</a>
+  {% endfor %}
+</ul>
