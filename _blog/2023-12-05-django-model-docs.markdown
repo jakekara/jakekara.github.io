@@ -1,7 +1,7 @@
 ---
 layout: post
 title: documenting django models
-date: "2023-12-05 12:01:00 -0500"
+date: "2023-12-05 10:30:00 -0500"
 categories: python
 emoji: 📑
 ---
