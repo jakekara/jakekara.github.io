@@ -75,6 +75,5 @@ def test_say_hello():
 * Color Extraction Methodology repo - [https://github.com/jakekara/color-extraction-methodology/](https://github.com/jakekara/color-extraction-methodology/)
 * Color Extraction Methodology live demo - [https://mybinder.org/v2/zenodo/10.5281/zenodo.4554402/](https://mybinder.org/v2/zenodo/10.5281/zenodo.4554402/)
 * Thesis on Harvard DASH - [https://nrs.harvard.edu/URN-3:HUL.INSTREPOS:37367613](https://nrs.harvard.edu/URN-3:HUL.INSTREPOS:37367613)
-* Thesis on ProQUest - TBD when it is indexed.
 * Video tutorial on using Jupyter Notebooks as Python modules - [https://youtu.be/6EgsAb56jY0](https://youtu.be/6EgsAb56jY0)
 
