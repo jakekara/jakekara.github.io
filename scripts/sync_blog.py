@@ -1,3 +1,5 @@
+"""Copy posts over from _posts to _blog."""
+
 from glob import glob
 import os
 import shutil
