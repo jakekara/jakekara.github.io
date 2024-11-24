@@ -21,8 +21,7 @@ researchers to enter evidence of officer-involved shootings, including source UR
 automatically archived to preserve research evidence. The system also automates the process of publishing [the open
 data](https://github.com/washingtonpost/data-police-shootings) to GitHub.
 
-My team led re-engineered the backend system to be
-more reliable, extensible, and scalable.
+My team re-engineered the backend system to be more reliable, extensible, and scalable.
 
 I worked on both the application development and the deployment of the system, as well as helping to shape the product scope.
 
