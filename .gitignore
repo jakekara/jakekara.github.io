@@ -4,3 +4,4 @@ _site
 activitypub/events
 *.pem
 *.pyc
+scratch
