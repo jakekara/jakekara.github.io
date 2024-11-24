@@ -33,4 +33,7 @@ bugs that could have led to errors in published data.
 ## More links
 
 * [Pulitzer Prize-winning Fatal Force Database updated with federal IDs of police departments involved in fatal shootings](https://www.washingtonpost.com/pr/2022/12/06/pulitzer-prize-winning-fatal-force-database-updated-with-federal-ids-police-departments-involved-fatal-shootings/)
-* [Inside the Washington Post’s police shootings database: An oral history](https://medium.com/thewashingtonpost/inside-the-washington-post-s-police-shootings-database-an-oral-history-413121889529)
+* [Inside the Washington Post’s police shootings database: An oral history](https://medium.com/thewashingtonpost/inside-the-washington-post-s-police-shootings-database-an-oral-history-413121889529)tomates the process of publishing [the open
+data](https://github.com/washingtonpost/data-police-shootings) to GitHub.
+
+My team re-engineered the backend system to be more reliable, e
