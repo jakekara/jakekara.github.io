@@ -1,6 +1,6 @@
 ---
 layout: post
-title: synology-email-ip-changes
+title: Using Synology NAS to email you when its IP changes
 date: "2025-01-29 10:00:00 -0400"
 categories: bash
 emoji: 📠
@@ -18,6 +18,9 @@ So what this script does specifically is check my public IP using
 from the last time it checked, it prints the new IP and exits
 with an error code, causing the Synology to send me the entire
 output, which includes the new IP.
+
+If the IP hasn't changed the program exits normally and no email
+is sent. Pretty handy.
 
 ```bash
 set -e 
