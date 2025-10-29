@@ -217,7 +217,8 @@ code {
   font-size: 10pt;
   display: inline-block;
   max-width: 100%;
-  overflow-x: scroll;
+  // overflow-x: scroll;
+  overflow-x: auto;
 }
 
 .clear-both {
