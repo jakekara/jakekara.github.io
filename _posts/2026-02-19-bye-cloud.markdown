@@ -6,7 +6,7 @@ categories: bash
 emoji: 👋
 ---
 
-I set up Immich and exported all my data from iCloud, but I needed a way to reognize Apple's data dump.
+I set up Immich and exported all my data from iCloud, but I needed a way to reorgnize Apple's data dump.
 
 Apple will give you your iCloud data if you request it, but they make it as inconvenient as possible. It
 takes days to process your request, and the files are organized in a way that works for them, not you. There
@@ -14,7 +14,7 @@ is metadata in CSVs and JSON files, that includes information about the photos a
 
 I wanted a simple folder structure to represent albums (including their generated "memories"), and very 
 importantly I wanted to preserve data information which is not consistently present in the image files themselves,
-so I needed a way to stitch the data back into the images, and reoganize the images into folders.
+so I needed a way to stitch the data back into the images, and reorganize the images into folders.
 
 From there I was able to import it with `immich-go`, a really cool tool that just doesn't have specific support
 for iCloud exports yet.
