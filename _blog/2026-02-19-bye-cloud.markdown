@@ -1,0 +1,30 @@
+---
+layout: post
+title: bye-cloud: Take your iCloud photos to Immich
+date: "2026-02-19 10:00:00 -0500"
+categories: bash
+emoji: 👋
+---
+
+I set up Immich and exported all my data from iCloud, but I needed a way to reognize Apple's data dump.
+
+Apple will give you your iCloud data if you request it, but they make it as inconvenient as possible. It
+takes days to process your request, and the files are organized in a way that works for them, not you. There
+is metadata in CSVs and JSON files, that includes information about the photos and what albums they belong to.
+
+I wanted a simple folder structure to represent albums (including their generated "memories"), and very 
+importantly I wanted to preserve data information which is not consistently present in the image files themselves,
+so I needed a way to stitch the data back into the images, and reoganize the images into folders.
+
+From there I was able to import it with `immich-go`, a really cool tool that just doesn't have specific support
+for iCloud exports yet.
+
+So I created `bye-cloud`, a program that was useful to me exactly once, and decied to publish it. A few months
+later, I took a pass at spiffing up the code base with Claude Code -- adding testing and distributing on Homebrew.
+
+Usage is pretty simple, so check out the code and docs here: [https://github.com/jakekara/bye-cloud](https://github.com/jakekara/bye-cloud).
+
+I have pretty complicated and conflicting feelings about using AI for coding, which I will explore more but not here.
+If one person besides me uses it to leave the Apple ecosystem, I think it's worth it. It was a lot of effort to write
+it from scratch, and there was no way I would have written tests or packaged it for Homebrew without a faster way
+to write the code.
