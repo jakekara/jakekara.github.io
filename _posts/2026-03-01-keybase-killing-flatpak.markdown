@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Flatpak apps mysteriously failing to launch"
-date: "2026-02-28 06:00:00 -0500"
+date: "2026-03-01 06:00:00 -0500"
 categories: bash
 emoji: 🤯
 ---
