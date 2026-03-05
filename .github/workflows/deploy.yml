@@ -44,7 +44,7 @@ jobs:
             dir=$(dirname "$f")
             slug=$(basename "$dir")
             txtfile="$(dirname "$dir")/${slug}.txt"
-            w3m -dump "$f" > "$txtfile"
+            w3m -dump "file://$(pwd)/$f" > "$txtfile"
           done
 
       - uses: actions/configure-pages@v4
