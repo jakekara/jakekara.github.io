@@ -41,10 +41,8 @@ jobs:
 
       - name: Generate .txt versions of blog posts
         run: |
-          find _site/blog -name index.html | while read f; do
-            dir=$(dirname "$f")
-            slug=$(basename "$dir")
-            txtfile="$(dirname "$dir")/${slug}.txt"
+          find _site/blog -name "*.html" ! -name "index.html" | while read f; do
+            txtfile="${f%.html}.txt"
             w3m -dump "file://$(pwd)/$f" > "$txtfile"
           done
 
