@@ -41,10 +41,16 @@ jobs:
 
       - name: Generate .txt versions of blog posts
         run: |
+          echo "Looking for HTML files..."
+          find _site/blog -name "*.html" ! -name "index.html"
           find _site/blog -name "*.html" ! -name "index.html" | while read f; do
             txtfile="${f%.html}.txt"
+            echo "Converting $f -> $txtfile"
             w3m -dump "file://$(pwd)/$f" > "$txtfile"
+            echo "Size: $(wc -c < "$txtfile") bytes"
           done
+          echo "Done. .txt files:"
+          find _site/blog -name "*.txt"
 
       - uses: actions/configure-pages@v4
 
