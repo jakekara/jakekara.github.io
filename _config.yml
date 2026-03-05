@@ -26,7 +26,7 @@ github_username: jakekara
 
 # Build settings
 markdown: kramdown
-exclude: ["old"]
+exclude: ["old", "vendor"]
 include: [".well-known"]
 
 #permalink: /:categories/:year/:month/:day/:title:output_ext
