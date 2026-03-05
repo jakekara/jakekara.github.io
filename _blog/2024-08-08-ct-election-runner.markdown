@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /python/2024/08/08/ct-election-runner
 layout: post
 title: ct-election-runner
 date: "2024-08-08 10:00:00 -0400"

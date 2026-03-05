@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /docker/2016/10/23/docker-beanstalk-django
 layout: post
 title:  "Deploying Django news apps on AWS"
 date:   2016-10-23 12:00:00 -0400

@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /python/2017/01/27/scrapetools
 layout: post
 title:  "scrapetools.py - for pulling down all linked files from a page"
 date:   2017-01-27 4:22:30 -0500

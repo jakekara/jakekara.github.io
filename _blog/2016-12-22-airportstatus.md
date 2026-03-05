@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /python/2016/12/22/airportstatus
 layout: post
 title:  "Fetching FAA airport status in python"
 date:   2016-12-22 19:50:30 -0400

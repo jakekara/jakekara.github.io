@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /javascript/2017/10/08/plottools
 layout: post
 title:  "A plotting toolbox for D3"
 date:   2017-10-07 00:00:30 -0500

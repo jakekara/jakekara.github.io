@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /python/2016/10/08/brute-forcing-url-shorteners
 layout: post
 title:  "Brute forcing URL shorteners"
 date:   2016-10-08 22:57:30 -0400

@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /bash/2026/03/01/keybase-killing-flatpak
 layout: post
 title: "Flatpak apps mysteriously failing to launch"
 date: "2026-03-01 06:00:00 -0500"

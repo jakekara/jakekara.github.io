@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /python/2016/10/01/omg-bears
 layout: post
 title:  "Finding bears with Pandas"
 date:   2016-10-01 19:57:30 -0400

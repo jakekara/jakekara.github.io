@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /bash/2025/01/29/ip-change-email
 layout: post
 title: Using Synology NAS to email you when its IP changes
 date: "2025-01-29 10:00:00 -0400"

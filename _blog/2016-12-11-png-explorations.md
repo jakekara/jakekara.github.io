@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /python/2016/12/11/png-explorations
 layout: post
 title:  "Apple screenshot PNGs contain non-standard chunk"
 date:   2016-12-11 19:50:30 -0400

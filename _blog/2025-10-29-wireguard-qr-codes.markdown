@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /bash/2025/10/29/wireguard-qr-codes
 layout: post
 title: Generating QR codes to configure Wireguard Clients
 date: "2025-10-28 10:00:00 -0400"

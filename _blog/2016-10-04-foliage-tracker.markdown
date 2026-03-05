@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /javascript/2016/10/04/foliage-tracker
 layout: post
 title:  "Visualizing foliage"
 date:   2016-10-03 19:57:30 -0400

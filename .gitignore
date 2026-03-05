@@ -1,6 +1,6 @@
 _site
-.jekyll-cacheold-index.html
 .jekyll-cache
+.jekyll-metadata
 activitypub/events
 *.pem
 *.pyc

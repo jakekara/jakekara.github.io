@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /python/2020/07/07/covid-date
 layout: post
 title: covid-date - CLI tool to get the covid-era date
 date: '2020-07-07 15:00:00 -0500'

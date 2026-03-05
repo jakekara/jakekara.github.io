@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /python/2021/09/10/marko-labeled-footnotes
 layout: post
 title: marko labeled footnotes
 date: "2021-09-10 12:01:00 -0500"

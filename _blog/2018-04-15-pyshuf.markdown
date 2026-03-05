@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /python/2018/04/15/pyshuf
 layout: post
 title:  "An inexact clone of GNU shuf implemented in Python"
 date:   2018-04-15 15:20:00 -0500

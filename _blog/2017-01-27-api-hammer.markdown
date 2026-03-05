@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /python/2017/01/27/api-hammer
 layout: post
 title:  "API keychain to bypass rate limits"
 date:   2017-01-24 4:14:30 -0500

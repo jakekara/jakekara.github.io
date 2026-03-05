@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /AWS/2016/10/12/aws-beanstalk-and-ghostery
 layout: post
 title:  "Ghostery doesn't like AWS Beanstalk"
 date:   2016-10-12 18:30:00 -0400

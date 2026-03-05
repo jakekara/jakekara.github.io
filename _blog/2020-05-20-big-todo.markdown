@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /python/2020/05/20/big-todo
 layout: post
 title: big-todo - make virtual TODO files
 date: '2020-05-20 15:00:00 -0500'

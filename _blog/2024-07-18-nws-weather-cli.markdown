@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /python/2024/07/18/nws-weather-cli
 layout: post
 title: Human-readable NWS weather reports via the CLI
 date: "2024-07-18 20:01:00 -0400"

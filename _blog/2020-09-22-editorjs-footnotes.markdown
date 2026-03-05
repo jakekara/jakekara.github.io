@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /js/2020/09/22/editorjs-footnotes
 layout: post
 title: editor.js footnote plugin
 date: "2020-09-22 16:45:00 -0400"

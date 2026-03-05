@@ -33,6 +33,7 @@ include: [".well-known"]
 
 plugins:
   - jekyll-archives
+  - jekyll-redirect-from
 
 jekyll-archives:
   enabled: all
@@ -47,8 +48,6 @@ jekyll-archives:
     collectionYear: ":collection/:year"
 
 collections:
-  posts:
-    output: true
   projects:
     output: true
   notes:
@@ -64,18 +63,10 @@ collections:
 permalink: /:categories/:year/:month/:day/:title
 post_dirs: true
 
-# This is what I'd like to do but I don't want to break links
-# permalink: /:collection/:year/:month/:day/:title
-
 defaults:
   - scope:
       path: "" # empty string for all files
-      type: posts # limit to posts
+      type: blog
     values:
-      is_post: true # automatically set is_post=true for all posts
-      ogtype: "article"
-  - scope:
-      path: "" # empty string for all files
-      type: blog # limit to posts
-    values:
+      is_post: true
       ogtype: "article"

@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /python/2018/04/19/jnap
 layout: post
 title:  "A library for picking your Linksys router's brain"
 date:   2018-04-19 15:20:00 -0500

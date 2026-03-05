@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /javascript/2017/04/16/toposplit
 layout: post
 title:  "Split big topojson files into a grid of files"
 date:   2017-04-16 10:00:30 -0500

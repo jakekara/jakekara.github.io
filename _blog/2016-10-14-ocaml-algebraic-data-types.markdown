@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /ocaml/cardstuff/2016/10/14/ocaml-algebraic-data-types
 layout: post
 title:  "OCaml algebraic data types and pattern matching"
 date:   2016-10-14 18:30:00 -0400

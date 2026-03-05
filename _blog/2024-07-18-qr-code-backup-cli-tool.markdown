@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /python/2024/07/18/qr-code-backup-cli-tool
 layout: post
 title: Scan and print QR code backups from the CLI
 date: "2024-07-18 10:01:00 -0400"

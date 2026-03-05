@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /python/2020/04/17/archivesspace-scraper
 layout: post
 title: archives-space-scraper
 description: "Open source command line tool for making local copies of ArchivesSpace repositories"

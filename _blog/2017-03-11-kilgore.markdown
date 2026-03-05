@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /python/2017/03/11/kilgore
 layout: post
 title:  "Command-line CSV processing with Kilgore Trout"
 date:   2017-03-11 10:00:30 -0500

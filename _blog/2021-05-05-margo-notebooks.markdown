@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /margo/2021/05/05/margo-notebooks
 layout: post
 title: modular jupyter notebooks
 date: "2021-05-05 17:01:00 -0500"

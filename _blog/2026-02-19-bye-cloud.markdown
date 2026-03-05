@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /bash/2026/02/19/bye-cloud
 layout: post
 title: "bye-cloud: Take your iCloud photos to Immich"
 date: "2026-02-19 06:00:00 -0500"

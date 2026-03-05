@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /javascript/2017/04/16/datab.js
 layout: post
 title:  "datab.js, tabular data with js"
 date:   2017-04-16 10:00:30 -0500

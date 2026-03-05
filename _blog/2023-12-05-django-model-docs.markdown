@@ -1,4 +1,6 @@
 ---
+redirect_from:
+  - /python/2023/12/05/django-model-docs
 layout: post
 title: documenting django models
 date: "2023-12-05 12:01:00 -0500"
