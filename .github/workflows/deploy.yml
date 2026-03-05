@@ -30,12 +30,6 @@ jobs:
       - name: Build default theme
         run: bundle exec jekyll build --destination _site
 
-      - name: Build terminal theme
-        run: bundle exec jekyll build --config _config.yml,_config_terminal.yml --destination _site_terminal
-
-      - name: Merge terminal theme into site
-        run: cp -r _site_terminal/. _site/terminal/
-
       - name: Install w3m
         run: sudo apt-get install -y w3m
 
