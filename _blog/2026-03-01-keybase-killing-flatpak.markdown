@@ -6,6 +6,7 @@ title: "Flatpak apps mysteriously failing to launch"
 date: "2026-03-01 06:00:00 -0500"
 categories: bash
 emoji: 🤯
+toot: "Flatpak apps mysteriously failing to launch on Fedora/KDE? Turns out Keybase was the culprit."
 ---
 
 Finally figured out the mystery of intermittent apps failing to launch on my Fedora/KDE system.

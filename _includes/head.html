@@ -28,7 +28,10 @@
   <meta name="author" content="Jake Kara">
 
   <!-- links section -->
-  <link rel="stylesheet" href="{{site.root}}/css/jk2017.css" media="all">
+  <link rel="stylesheet" href="/css/{{ site.css_file | default: 'jk2017.css' }}" media="all">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }} (social)" href="{{ '/feed-social.xml' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="me" href="https://fed.brid.gy/">
   <link
     rel="icon"
     href="/favicon.ico"
