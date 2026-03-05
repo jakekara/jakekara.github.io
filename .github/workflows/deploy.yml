@@ -1,0 +1,57 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+
+      - name: Build default theme
+        run: bundle exec jekyll build --destination _site
+
+      - name: Build terminal theme
+        run: bundle exec jekyll build --config _config.yml,_config_terminal.yml --destination _site_terminal
+
+      - name: Merge terminal theme into site
+        run: cp -r _site_terminal/. _site/terminal/
+
+      - name: Install w3m
+        run: sudo apt-get install -y w3m
+
+      - name: Generate .txt versions of blog posts
+        run: |
+          find _site/blog -name index.html | while read f; do
+            dir=$(dirname "$f")
+            slug=$(basename "$dir")
+            txtfile="$(dirname "$dir")/${slug}.txt"
+            w3m -dump "$f" > "$txtfile"
+          done
+
+      - uses: actions/configure-pages@v4
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - id: deployment
+        uses: actions/deploy-pages@v4

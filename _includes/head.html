@@ -58,6 +58,7 @@
     rel="canonical"
     href="/blog/{{page.date | date: '%Y/%m/%d'}}/{{page.slug}}"
  >
+  <link rel="alternate" type="text/plain" href="{{ page.url | remove_last: '/' }}.txt">
   {% else %}
   <link rel="canonical" href="{{page.url}}">
   {% endif %}
