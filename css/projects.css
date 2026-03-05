@@ -27,6 +27,7 @@ li.project-list-item {
   padding: 0px;
   margin: 0px;
   margin-bottom: 40px;
+  position: relative;
 }
 
 .project {
@@ -34,7 +35,9 @@ li.project-list-item {
   padding: 12px;
 }
 
-.project-link:hover .project {
+/* hover and focus driven from the li, not the a, since ::after covers the card */
+.project-list-item:hover .project,
+.project-list-item:focus-within .project {
   border-color: #7ee9ae;
 }
 
@@ -44,6 +47,16 @@ img {
 picture.project-preview img {
   max-width: 100%;
   overflow-x: hidden;
+}
+
+a.project-link {
+  outline: none;
+}
+
+a.project-link::after {
+  content: '';
+  position: absolute;
+  inset: 0;
 }
 
 a.project-link:hover {

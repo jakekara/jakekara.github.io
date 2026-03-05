@@ -7,19 +7,21 @@ description: Story-driven software engineer specializing in digital humanities a
 <ul class="post-list">
   {% assign sorted = site.blog | reverse %}
   {% for post in sorted %}
-  <a aria-label="{{ post.title }} " href="{{ post.url | relative_url }}">
   <li class="col-xs-12 story-preview">
-    
+      
+
       <article>
         <header>
           <p class="col-xs-7 col-sm-2 post-meta">
             <time datetime="{{ post.date | date: "%Y-%m-%d" }}">{{ post.date | date: "%B %-d, %Y" }}</time>
           </p>
           <p class="post-link meta" href="{{ post.url | relative_url }}">
+            <a aria-label="{{ post.title }} " href="{{ post.url | relative_url }}">
               {{ post.emoji | default: "📝" }} {{ post.excerpt | strip_html}}</p>
+            </a>
         </header>
       </article>
+
   </li>
-</a>
   {% endfor %}
 </ul>
