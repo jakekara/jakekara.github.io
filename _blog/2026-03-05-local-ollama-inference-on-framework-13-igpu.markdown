@@ -1,11 +1,11 @@
 ---
 redirect_from:
-  - /bash/2026/03/06/local-ollama-inference-on-framework-13-igpu
+  - /local-ai/2026/03/06/local-ollama-inference-on-framework-13-igpu
 layout: post
-title: "Running local LLMs in Ollama through the iGPU on a Framework Strix Halo"
-date: "2026-03-06 06:00:00 -0500"
+title: "Running local LLMs in Ollama through the iGPU on a Framework 13"
+date: "2026-03-05 06:00:00 -0500"
 categories: local-ai
-emoji: 🤯
+emoji: 🤖
 toot: "I got local Ollama LLMs working through the iGPU on my Framework 13, it was kind of a pain."
 ---
 
@@ -13,7 +13,7 @@ I recently got local LLM inference working on my Framework laptop 13's iGPU. Her
 
 ## Background
 
-I bought a new mainboard for my Framework 13 and maxed it out with memory because it's my daily driver. It has AMD's Ryzen AI Max (that I recently learned is called"Strix Halo") APU and 96GB of DDR5. I thought it would be good for local LLMs right out of the box, because it has AI in the name
+I bought a new mainboard for my Framework 13 and maxed it out with memory because it's my daily driver. It has AMD's Ryzen AI HX370 and 96GB of DDR5. I thought it would be good for local LLMs right out of the box, because it has AI in the name
 of the CPU, but it's not. I couldn't even get it to do much of anything.
 
 I also couldn't find anyone who'd documented this for gfx1150, so here's my experience in case it helps any fellow travelers. Oh, and gfx1150 is what I learned is the shorthand for my specific GPU/CPU, shared memory platform. That helped look for posts about support for the platform. 
@@ -23,7 +23,7 @@ I also couldn't find anyone who'd documented this for gfx1150, so here's my expe
 There's so much I don't know about running LLMs locally, so how did I figure this out? I used
 Kagi Assistant to research my specific hardware and see if anyone had written how to get this going.
 Then I gave that research to Claude to turn into a guide. Then I kept talking to Claude as I 
-worked through that guide, asking questions, describing issuses I was running into. This is an
+worked through that guide, asking questions, describing issues I was running into. This is an
 AI-assisted approach to my normal process of debugging where I keep process notes that pretty much
 always pay dividends later when I forget something, or force me to understand it better by the
 act of writing it down. 
@@ -93,9 +93,14 @@ Run `ollama ps` while a model is generating and you should see **100% GPU** in t
 
 ## Step 4: Aider for agentic coding
 
-I'm using Aider as the coding interface on top of Ollama. The install is straightforward (`pip install aider-chat` in a venv), but there's one mandatory config step that's easy to miss.
+I'm using Aider as the coding interface on top of Ollama. The config step is easy to miss.
 
-Aider's default context window is 2048 tokens, which is too small for real work. Create `~/.aider.model.settings.yml`:
+Aider's default context window is 2048 tokens, which is too small for real work. It just straight
+up didn't do anything useful. I couldn't get it to write a file that contains "hello, world!"
+
+I will probably have a full post just on aider once I work through some issues with it.
+
+Create `~/.aider.model.settings.yml`:
 
 ```yaml
 - name: ollama/qwen2.5-coder:32b-instruct
@@ -113,7 +118,7 @@ The model name has to match `ollama list` exactly.
 
 ## How fast is it?
 
-I benchmarked `qwen3:32b` on GPU vs CPU. GPU (Vulkan) runs at about 3.84 tokens/second, CPU at 3.15 — roughly 22% faster. 
+I benchmarked `qwen3:32b` on GPU vs CPU. GPU (Vulkan) runs at about 3.84 tokens/second, CPU at 3.15 — roughly 22% faster. I used `ollama run --verbose` to get performance info.
 
 Here's what Claude said about that:
 
@@ -131,4 +136,4 @@ Here's what Claude said about that:
 4. Configure Aider's context window in `~/.aider.model.settings.yml`
 5. Verify with `ollama ps` — look for 100% GPU
 
-The 32B models are the sweet spot for 32GB of iGPU allocation. Fully on-GPU, no split inference, and fast enough to be useful for agentic coding workflows. If you've got a Strix Halo Framework and want to run models locally, hopefully this saves you the afternoon I spent figuring it out.
+The 32B models are the sweet spot for 32GB of iGPU allocation. Fully on-GPU, no split inference, and fast enough to be useful for agentic coding workflows. Hopefully this saves you the afternoon I spent figuring it out.
