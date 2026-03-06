@@ -46,14 +46,14 @@ a:hover {
 .post-list .post-link a {
   color: #222;
   display: block;
-  background-color: inherit;
+  background-color: transparent;
 }
 
 .post-list .post-link:focus a,
 .post-list .post-link:focus-within a,
 .story-preview:hover .post-link a {
-  background-color: rgb(115, 65, 131);
-  color: white;
+  background-color: transparent;
+  color: inherit;
 }
 
 .story-preview {
@@ -84,17 +84,17 @@ a:hover {
 
     .post-list .post-link a {
       color: #7ee9ae;
-      background-color: inherit;
+      background-color: transparent;
     }
 
     .post-list .post-link a:hover {
       color: #7ee9ae;
-      background-color: rgb(136, 17, 100);
+      background-color: transparent;
     }
 
     .story-preview:hover .post-link a {
       color: #7ee9ae;
-      background-color: rgb(136, 17, 100);
+      background-color: transparent;
     }
 
     .post-meta {
