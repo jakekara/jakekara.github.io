@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Jake Kara, Software Engineer
+title: Jake Kara
 css_file: jk2026.css
 socialImage: /assets/images/og/JakeKaraSocial_og.png
 twitterImage: /assets/images/twitter/JakeKaraSocial_square.png
