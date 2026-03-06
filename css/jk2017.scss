@@ -20,27 +20,31 @@ a {
 }
 
 
-/* Default color scheme */
+/* Default color scheme — Mac Classic platinum */
 body {
-  /* background-color: #fffff8; */
-  /* color: #122b17; */
-
-  /* background-color: rgb(242, 245, 241); */
-  background-color: white;
-  color: #222;
+  background-color: #cccccc;
+  color: #000;
 }
 a {
-  background-color: rgb(241, 195, 227);
-  /* background-color: rgb(83, 19, 64); */
-  color: inherit;
+  background-color: #000080;
+  color: white;
 }
 a:hover {
-  /* color: gray; */
-  background-color: rgb(115, 65, 131);
+  background-color: #000;
   color: white;
 }
 .post-meta {
-  color: #02883f;
+  color: #555;
+}
+
+.nav-link {
+  background-color: #000080;
+  color: white;
+}
+.nav-link:hover {
+  background-color: #000080;
+  color: white;
+  box-shadow: 4px 4px 0px #444;
 }
 
 .post-list .post-link a {
@@ -68,8 +72,21 @@ a:hover {
 
 .story-preview:focus-within,
 .story-preview:hover {
-  transition: border-color 0.5s ease;
+  transition: border-color 0.08s ease, box-shadow 0.08s ease, background-color 0.08s ease;
   border-color: #7ee9ae;
+  box-shadow: 10px 10px 0px #7ee9ae;
+  background-color: #f7f7f7;
+}
+
+.project-list-item:hover .project,
+.project-list-item:focus-within .project {
+  background-color: #f7f7f7;
+  transition: background-color 0.08s ease;
+}
+
+a.project-link {
+  background-color: transparent;
+  color: inherit;
 }
 
 
@@ -107,6 +124,24 @@ a:hover {
     }
     a:hover {
       background-color: rgb(136, 17, 100);
+    }
+
+    ul.post-list li {
+      background-color: #333;
+      border-color: #555;
+      box-shadow: 10px 10px 0px #111;
+    }
+
+    .story-preview:focus-within,
+    .story-preview:hover {
+      border-color: #7ee9ae;
+      box-shadow: 10px 10px 0px #7ee9ae;
+      background-color: #3a3a3a;
+    }
+
+    .project-list-item:hover .project,
+    .project-list-item:focus-within .project {
+      background-color: #3a3a3a;
     }
   }
 }
@@ -182,7 +217,7 @@ button#dark-mode-toggle:hover {
 }
 
 #masthead .bottom-skew.white {
-  background-color: white;
+  background-color: #cccccc;
   transform: skew(45deg) translateX(34px);
 }
 
@@ -254,8 +289,9 @@ ul.post-list li {
   margin-left: 14px;
   margin-right: 14px;
   padding: 9px 29px;
-  border: 3px solid black;
-  box-shadow: 10px 10px 0px black;
+  background-color: white;
+  border: 3px solid #444;
+  box-shadow: 10px 10px 0px #444;
 }
 
 
