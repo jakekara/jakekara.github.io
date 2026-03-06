@@ -14,6 +14,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Jake Kara, Software Engineer
+css_file: jk2026.css
 socialImage: /assets/images/og/JakeKaraSocial_og.png
 twitterImage: /assets/images/twitter/JakeKaraSocial_square.png
 email: hey@jakekara.com

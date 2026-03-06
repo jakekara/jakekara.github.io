@@ -1,0 +1,153 @@
+---
+---
+
+@import url("jk2017.css");
+
+/* === jk2026 theme: Mac Classic light / terminal dark === */
+
+/* --- Color scheme: Mac Classic platinum --- */
+body {
+  background-color: #cccccc;
+  color: #000;
+}
+a {
+  background-color: #000080;
+  color: white;
+}
+a:hover {
+  background-color: #000;
+  color: white;
+}
+.post-meta {
+  color: #555;
+}
+
+/* --- Nav: outlined terminal buttons --- */
+.nav-link {
+  padding: 5px 12px;
+  border-radius: 0px;
+  font-family: Monaco, "Lucida Console", "Inconsolata", monospace;
+  text-transform: lowercase;
+  background-color: transparent;
+  color: #333;
+  border: 1px solid #333;
+}
+.nav-link:hover {
+  background-color: #333;
+  color: #cccccc;
+  border-color: #333;
+  box-shadow: none;
+}
+
+/* --- Site title: monospace --- */
+#site-title {
+  font-family: Monaco, "Lucida Console", "Inconsolata", monospace;
+}
+
+/* --- Masthead --- */
+#masthead .masthead-top {
+  background-color: #222;
+}
+#masthead .bottom-skew.white {
+  background-color: #cccccc;
+}
+
+/* --- Post list: Lynx-style plain list --- */
+ul.post-list li {
+  margin-top: 0;
+  padding: 8px 0;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #aaa;
+  box-shadow: none;
+}
+
+.post-list .post-link a {
+  background-color: transparent;
+  color: #000;
+}
+.post-list .post-link:focus a,
+.post-list .post-link:focus-within a,
+.story-preview:hover .post-link a {
+  background-color: transparent;
+  color: inherit;
+}
+
+/* --- Story preview hover --- */
+.story-preview:focus-within,
+.story-preview:hover {
+  transition: background-color 0.08s ease;
+  border-color: inherit;
+  box-shadow: none;
+  background-color: #e8e8e8;
+}
+
+/* --- Project cards --- */
+a.project-link {
+  background-color: transparent;
+  color: inherit;
+}
+.project-list-item:hover .project,
+.project-list-item:focus-within .project {
+  background-color: #e8e8e8;
+  transition: background-color 0.08s ease;
+}
+
+/* --- Dark mode --- */
+@media screen {
+  [data-darkmode="true"] {
+    body {
+      background-color: #222;
+      color: #bbb;
+    }
+    a {
+      background-color: rgb(83, 19, 64);
+      color: white;
+    }
+    a:hover {
+      background-color: rgb(136, 17, 100);
+    }
+    .post-meta {
+      color: rgb(193, 144, 207);
+    }
+    .nav-link {
+      background-color: transparent;
+      color: #7ee9ae;
+      border-color: #7ee9ae;
+    }
+    .nav-link:hover {
+      background-color: #7ee9ae;
+      color: #222;
+      border-color: #7ee9ae;
+    }
+    .post-list .post-link a {
+      color: #7ee9ae;
+      background-color: transparent;
+    }
+    .post-list .post-link a:hover {
+      color: #7ee9ae;
+      background-color: transparent;
+    }
+    .story-preview:hover .post-link a {
+      color: #7ee9ae;
+      background-color: transparent;
+    }
+    ul.post-list li {
+      background-color: transparent;
+      border-bottom-color: #555;
+      box-shadow: none;
+      border-top: none;
+      border-left: none;
+      border-right: none;
+    }
+    .story-preview:focus-within,
+    .story-preview:hover {
+      background-color: #2e2e2e;
+      box-shadow: none;
+    }
+    .project-list-item:hover .project,
+    .project-list-item:focus-within .project {
+      background-color: #3a3a3a;
+    }
+  }
+}
