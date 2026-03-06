@@ -4,48 +4,22 @@ window.onload = function () {
   toggleButton.setAttribute("id", "dark-mode-toggle");
   toggleContainer.appendChild(toggleButton);
 
-  function systemIsInDarkMode() {
-    let matched = window.matchMedia("(prefers-color-scheme: dark)").matches;
-    if (matched) {
-      return true;
-    }
-    return false;
+  function setDarkMode(val) {
+    const dark = val === true || val === "true";
+    toggleButton.innerHTML = "💡";
+    toggleButton.setAttribute("title", dark ? "enable light mode" : "enable dark mode");
+    document.documentElement.setAttribute("data-darkmode", dark ? "true" : "false");
+    localStorage.setItem("darkmode", dark ? "true" : "false");
   }
 
   function toggleDarkMode() {
     const mode = document.documentElement.getAttribute("data-darkmode");
-
-    // console.log("toggleDarkMode: " + mode);
-
-    if (mode === "true") {
-      setDarkMode(false);
-    } else if (mode === "false") {
-      setDarkMode("true");
-    }
+    setDarkMode(mode !== "true");
   }
 
-  function setDarkMode(val) {
-    if (val) {
-      toggleButton.innerHTML = "💡"; //"🌕";
-      //   toggleButton.style.color = "#fafafa";
-      toggleButton.setAttribute("title", "enable light mode");
-      document.documentElement.setAttribute("data-darkmode", "true");
-    } else {
-      toggleButton.innerHTML = "💡"; //"🌑";
-      //   toggleButton.style.color = "#222";
-      toggleButton.setAttribute("title", "enable dark mode");
-      document.documentElement.setAttribute("data-darkmode", "false");
-    }
-  }
+  // Sync button label with current state (set by inline script in <head>)
+  const current = document.documentElement.getAttribute("data-darkmode");
+  setDarkMode(current === "true");
 
-  function unsetDarkMode() {
-    document.documentElement.removeAttribute("data-darkmode");
-  }
-
-  setDarkMode(systemIsInDarkMode());
   toggleButton.onclick = toggleDarkMode;
-
-  setTimeout(function () {
-    document.body.style.transition = "background-color 0.7s";
-  }, 1000);
 };

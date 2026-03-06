@@ -1,5 +1,12 @@
 <head>
   <meta charset="utf-8">
+  <script>
+    (function() {
+      var saved = localStorage.getItem('darkmode');
+      var dark = saved !== null ? saved === 'true' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.setAttribute('data-darkmode', dark ? 'true' : 'false');
+    })();
+  </script>
   <!-- setting page description -->
   {% assign description=page.description | default: page.excerpt | strip_html %}
 
@@ -81,6 +88,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <script src="/js/dark-mode-toggle.js" async></script>
+  <script src="/js/console-bbs.js" async></script>
 
   <!-- mobile theming meta info -->
   <meta name="color-scheme" content="dark light">
