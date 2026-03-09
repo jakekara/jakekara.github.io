@@ -3,6 +3,11 @@
 
 @import url("jk2017.css");
 
+/* Fix code block overflow on mobile */
+.highlighter-rouge pre {
+  box-sizing: border-box;
+}
+
 /* === jk2026 theme: Mac Classic light / terminal dark === */
 
 /* --- Color scheme: Mac Classic platinum --- */
