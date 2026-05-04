@@ -7,6 +7,7 @@ date: "2026-05-04 06:00:00 -0500"
 categories: ai
 emoji: ⚒️
 toot: "Bad bossing and the expertise byproduct"
+excerpt: Human effort produces an output as its product and expertise as its byproduct. Bad bosses don't know how lucky they are.
 ---
 
 Imagine you own a restaurant and you replace your professional "dish pit man" with a robot trained to do one thing perfectly: wash dishes. Same throughput. No overtime. No sick days. No scheduling. A clear win.
